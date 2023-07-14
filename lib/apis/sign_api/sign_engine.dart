@@ -723,6 +723,11 @@ class SignEngine implements ISignEngine {
     _accounts.remove(value);
   }
 
+  @override
+  void clearRegisteredAccounts() {
+    _accounts.clear();
+  }
+
   /// ---- PRIVATE HELPERS ---- ////
 
   Future<void> _resubscribeAll() async {
